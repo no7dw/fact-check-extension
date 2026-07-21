@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Claim Evidence Layer</title>
+    <link rel="stylesheet" href="ui.css">
+  </head>
+  <body class="popup">
+    <main>
+      <header>
+        <h1>Evidence Layer</h1>
+        <button id="optionsButton" class="icon-button" title="Settings">⚙</button>
+      </header>
+
+      <section id="keyWarning" class="warning" hidden>
+        Add your OpenAI API key before running analysis.
+      </section>
+
+      <label for="sourceUrl">Test source URL</label>
+      <textarea id="sourceUrl" rows="3">https://mp.weixin.qq.com/s/JQXlB5QNuQc98XL8Ytu8kQ</textarea>
+
+      <div class="button-row">
+        <button id="analyzePage" class="primary">Analyze current page</button>
+        <button id="openTestUrl">Open test URL</button>
+      </div>
+
+      <button id="analyzeUrl" class="secondary">Analyze URL text directly</button>
+
+      <p id="status" class="status"></p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

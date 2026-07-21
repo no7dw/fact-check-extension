@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Evidence Details</title>
+    <link rel="stylesheet" href="ui.css">
+  </head>
+  <body class="panel">
+    <main>
+      <header>
+        <h1>Evidence</h1>
+      </header>
+
+      <section id="emptyState" class="empty">
+        Click a highlighted claim on the page to inspect sources and reasoning.
+      </section>
+
+      <section id="claimView" hidden>
+        <div id="claimType" class="pill"></div>
+        <h2 id="claimText"></h2>
+
+        <div class="score">
+          <span>Confidence</span>
+          <strong id="confidenceText"></strong>
+        </div>
+        <div class="meter"><div id="confidenceFill"></div></div>
+
+        <dl>
+          <dt>Consensus</dt>
+          <dd id="consensus"></dd>
+          <dt>Verdict</dt>
+          <dd id="verdict"></dd>
+        </dl>
+
+        <h3>Why this score</h3>
+        <p id="explanation"></p>
+
+        <h3>Supporting Evidence</h3>
+        <ol id="supportList"></ol>
+
+        <h3>Counter Evidence</h3>
+        <ol id="counterList"></ol>
+
+        <h3>References</h3>
+        <ol id="sourceList"></ol>
+      </section>
+    </main>
+    <script src="sidepanel.js"></script>
+  </body>
+</html>

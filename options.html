@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Evidence Layer Settings</title>
+    <link rel="stylesheet" href="ui.css">
+  </head>
+  <body class="options">
+    <main>
+      <h1>Settings</h1>
+
+      <label for="apiKey">OpenAI API key</label>
+      <input id="apiKey" type="password" autocomplete="off" placeholder="sk-..." />
+      <p class="hint">Stored locally in Chrome extension storage. It is only sent to OpenAI API requests made by this extension.</p>
+
+      <label for="model">Model</label>
+      <input id="model" type="text" value="gpt-4.1-mini" />
+
+      <label for="endpoint">API endpoint</label>
+      <input id="endpoint" type="url" value="https://api.openai.com/v1/responses" />
+
+      <div class="button-row">
+        <button id="save" class="primary">Save</button>
+        <button id="clear">Clear key</button>
+      </div>
+
+      <p id="status" class="status"></p>
+    </main>
+    <script src="options.js"></script>
+  </body>
+</html>
